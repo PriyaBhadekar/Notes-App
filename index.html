@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Note Taking App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="loginContainer">
+      <h1>Login / Sign Up</h1>
+      <div class="form">
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button id="loginButton">Login</button>
+      </div>
+    </div>
+
+    <div class="container" id="notesContainer" style="display: none">
+      <h1>Note Taking App</h1>
+      <div class="form">
+        <input type="text" id="title" placeholder="Title" />
+        <textarea id="content" placeholder="Content"></textarea>
+        <button id="addNote">Add Note</button>
+      </div>
+      <div id="notesList" class="notes-list">
+        <!-- Notes will be dynamically displayed here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
